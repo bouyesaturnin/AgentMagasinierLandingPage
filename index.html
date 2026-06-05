@@ -315,7 +315,7 @@ footer { padding: 40px 48px; background: #0A1525; display: flex; align-items: ce
       <h2 class="section-title" style="margin:0 auto 16px;" data-fr="Parlons de votre projet" data-en="Let's talk about your project">Parlons de votre projet</h2>
       <p class="section-sub" style="margin:0 auto 0;" data-fr="Une question ? Une démo ? Nous répondons sous 24h." data-en="A question? A demo? We reply within 24h.">Une question ? Une démo ? Nous répondons sous 24h.</p>
     </div>
-    <form class="contact-form reveal" action="https://formspree.io/f/xvzngnbl" method="POST">
+    <form class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label data-fr="Votre nom" data-en="Your name">Votre nom</label>
@@ -334,7 +334,9 @@ footer { padding: 40px 48px; background: #0A1525; display: flex; align-items: ce
         <label data-fr="Message" data-en="Message">Message</label>
         <textarea name="message" required rows="4" placeholder="Décrivez votre besoin, le nombre de produits à gérer, vos fournisseurs..."></textarea>
       </div>
-      <input type="hidden" name="_subject" value="Nouveau prospect Agent API" />
+      <input type="hidden" name="access_key" value="f75b55b5-54eb-499e-92a4-ee4507450449" />
+      <input type="hidden" name="subject" value="Nouveau prospect Agent API" />
+      <input type="hidden" name="from_name" value="Agent API Landing Page" />
       <button type="submit" class="btn-submit" data-fr="Envoyer le message" data-en="Send message">Envoyer le message</button>
     </form>
     <div id="merci-msg" style="display:none;margin-top:24px;padding:20px;background:rgba(46,204,113,0.1);border:1px solid rgba(46,204,113,0.3);border-radius:12px;">
